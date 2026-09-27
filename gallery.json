@@ -1,0 +1,21 @@
+[
+  {
+    "type": "video",
+    "file": "gallery/tatuaje-proceso-sesion-timelapse-aguascalientes.mp4",
+    "poster": "gallery/tatuaje-proceso-sesion-timelapse-aguascalientes-poster.jpg",
+    "caption": "Proceso de sesión",
+    "alt": "Timelapse de una sesión de tatuaje realizada por Pedro Calderón en Aguascalientes"
+  },
+  {
+    "type": "image",
+    "file": "gallery/tatuaje-hannya-samurai-costilla-aguascalientes.webp",
+    "caption": "Hannya samurái · costillar",
+    "alt": "Tatuaje de máscara hannya con casco samurái en el costillar, realizado por Pedro Calderón, tatuador en Aguascalientes"
+  },
+  {
+    "type": "image",
+    "file": "gallery/tatuaje-tribal-hombro-pecho-aguascalientes.webp",
+    "caption": "Tribal blackwork · hombro y pecho",
+    "alt": "Tatuaje tribal blackwork en hombro y pecho, realizado por Pedro Calderón, tatuador en Aguascalientes"
+  }
+]
