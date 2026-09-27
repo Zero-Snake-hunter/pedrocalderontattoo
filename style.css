@@ -93,6 +93,20 @@ nav{
 .icon-link:hover{border-color:var(--brass);}
 .icon-link svg{width:16px;height:16px;stroke:var(--ink);fill:none;}
 
+/* Brand-colored platform buttons */
+.icon-link.ig{
+  border-color:transparent;
+  background:radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+}
+.icon-link.ig svg{stroke:#fff;}
+.icon-link.ig svg circle[fill="currentColor"]{fill:#fff;}
+.icon-link.tiktok{
+  border-color:transparent;
+  background:#000;
+}
+.icon-link.tiktok svg{stroke:none;fill:#fff;}
+.icon-link.ig:hover,.icon-link.tiktok:hover{border-color:transparent;transform:translateY(-1px);}
+
 /* HERO (home) */
 .hero{
   padding:88px 0 70px;
@@ -213,6 +227,7 @@ nav{
 .social-simple-label span{display:block;color:var(--ink-dim);font-size:0.88rem;margin-top:2px;}
 .social-simple:hover .icon-link{border-color:var(--brass);}
 .social-simple:hover .social-simple-label b{color:var(--brass);}
+.social-simple:hover .icon-link.ig,.social-simple:hover .icon-link.tiktok{border-color:transparent;filter:brightness(1.08);}
 
 /* CÓMO AGENDAR — simplified CTA band, no step boxes */
 .cta-band{
