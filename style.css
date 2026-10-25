@@ -258,3 +258,133 @@ footer{border-top:1px solid var(--line);padding:44px 0 90px;}
   .location-grid{grid-template-columns:1fr;}
   .social-simple-grid{gap:26px;}
 }
+
+/* ===== Nuevo diseño: carrusel, estilos, tira de trabajos, TikTok, reseñas, FAQ ===== */
+.hero-tag{
+  font-family:var(--font-display);font-style:italic;font-size:1.35rem;
+  color:var(--brass);margin:0 0 14px;max-width:none;
+}
+
+/* Carrusel */
+.carousel{position:relative;}
+.carousel .slide{
+  position:absolute;inset:0;margin:0;opacity:0;
+  transition:opacity .7s ease;
+}
+.carousel .slide.on{opacity:1;z-index:1;}
+.carousel .slide figcaption{
+  position:absolute;left:0;right:0;bottom:0;
+  padding:30px 14px 12px;font-size:0.74rem;letter-spacing:0.03em;color:var(--ink);
+  background:linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+}
+.car-ctrl{
+  position:absolute;top:10px;right:10px;z-index:3;
+  display:flex;align-items:center;gap:4px;
+  background:rgba(21,18,14,0.78);border:1px solid var(--line);
+  border-radius:999px;padding:4px 8px;
+}
+.car-ctrl[hidden]{display:none;}
+.car-ctrl button{
+  background:none;border:0;color:var(--ink);cursor:pointer;
+  min-width:28px;height:28px;border-radius:50%;font-size:0.8rem;line-height:1;
+}
+.car-ctrl button:hover{color:var(--brass);}
+.car-ctrl button:focus-visible{outline:2px solid var(--brass);outline-offset:1px;}
+.car-dots{display:flex;gap:2px;align-items:center;}
+.car-dots button{min-width:18px;height:18px;position:relative;}
+.car-dots button::after{
+  content:"";position:absolute;left:50%;top:50%;width:7px;height:7px;
+  transform:translate(-50%,-50%);border-radius:50%;
+  background:rgba(239,231,217,0.4);
+}
+.car-dots button.on::after{background:var(--brass);}
+
+/* Estilos */
+.style-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:var(--line);border:1px solid var(--line);}
+.style-card{background:var(--bg);padding:34px 30px;}
+.style-num{font-size:0.72rem;letter-spacing:0.1em;color:var(--brass);font-weight:600;}
+.style-card h3{font-size:1.4rem;margin:10px 0 12px;}
+.style-card p{color:var(--ink-dim);font-size:0.95rem;margin:0;}
+.style-note{margin:22px 0 0;color:var(--ink-dim);font-size:0.92rem;}
+.style-note a{color:var(--ink);text-decoration-color:var(--brass);text-underline-offset:3px;}
+
+/* Tira de trabajo reciente */
+.tiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:2px;}
+.tile{display:block;aspect-ratio:3/4;overflow:hidden;background:var(--bg);}
+.tile img{width:100%;height:100%;object-fit:cover;transition:transform .35s ease;}
+.tile:hover img{transform:scale(1.04);}
+.section-head .btn{flex-shrink:0;padding:10px 18px;font-size:0.85rem;}
+
+/* Mira el proceso (TikTok) */
+.vids{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;max-width:820px;}
+.vid{
+  position:relative;display:block;aspect-ratio:9/16;overflow:hidden;
+  background:var(--bg-alt);border:1px solid var(--line);text-decoration:none;
+}
+.vid img{width:100%;height:100%;object-fit:cover;}
+.vid b{
+  position:absolute;left:0;right:0;bottom:0;padding:34px 12px 12px;
+  font-size:0.8rem;font-weight:600;color:var(--ink);
+  background:linear-gradient(to top, rgba(0,0,0,0.78), transparent);
+}
+.vid .play{
+  position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);
+  width:54px;height:54px;border-radius:50%;background:rgba(0,0,0,0.6);
+  display:flex;align-items:center;justify-content:center;font-size:1.1rem;color:#fff;
+}
+.vid-ph{
+  position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+  font-size:0.75rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--ink-dim);
+}
+.vid:hover{border-color:var(--brass);}
+
+/* Reseñas */
+.reviews{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:2px;background:var(--line);border:1px solid var(--line);}
+.review{background:var(--bg);padding:32px 28px;margin:0;}
+.review-main p{font-family:var(--font-display);font-size:1.7rem;line-height:1.25;margin:0 0 18px;}
+.review-main footer{border:0;padding:0;font-size:0.82rem;color:var(--ink-dim);}
+.review-sum h3{font-size:1.1rem;margin-bottom:10px;}
+.review-sum p{color:var(--ink-dim);font-size:0.92rem;margin:0;}
+.review-note{margin:16px 0 0;font-size:0.78rem;color:var(--ink-dim);font-style:italic;}
+
+/* Ubicación: horario */
+.location-info .hours{color:var(--ink);}
+
+/* FAQ */
+.faq-wrap{max-width:820px;}
+.faq{border-bottom:1px solid var(--line);}
+.faq summary{
+  cursor:pointer;list-style:none;padding:20px 0;
+  font-family:var(--font-display);font-size:1.15rem;
+  display:flex;justify-content:space-between;gap:16px;
+}
+.faq summary::-webkit-details-marker{display:none;}
+.faq summary::after{content:"+";color:var(--brass);font-family:var(--font-body);}
+.faq[open] summary::after{content:"–";}
+.faq p{margin:0 0 20px;color:var(--ink-dim);max-width:62ch;}
+
+/* Sobre Tu Tatuador: pasos */
+.steps{list-style:none;margin:28px 0 0;padding:0;display:grid;gap:14px;counter-reset:s;}
+.steps li{counter-increment:s;display:flex;gap:14px;align-items:flex-start;color:var(--ink-dim);font-size:0.95rem;}
+.steps li::before{
+  content:counter(s);flex:0 0 28px;height:28px;border-radius:50%;
+  border:1px solid var(--brass);color:var(--brass);
+  display:flex;align-items:center;justify-content:center;font-size:0.8rem;font-weight:600;
+}
+.steps li b{color:var(--ink);font-weight:600;}
+.about h2{font-size:1.5rem;margin:26px 0 8px;}
+
+@media (max-width:860px){
+  .style-grid,.reviews{grid-template-columns:1fr;}
+  .vids{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;}
+  .section-head{flex-wrap:wrap;}
+}
+@media (prefers-reduced-motion: reduce){
+  .carousel .slide{transition:none;}
+  .tile img,.g-item img,.g-item video{transition:none;}
+  html{scroll-behavior:auto;}
+}
+@media (max-width:520px){
+  .vid-ph{font-size:0.58rem;letter-spacing:0.04em;}
+  .vid b{font-size:0.68rem;padding:26px 8px 8px;}
+}
