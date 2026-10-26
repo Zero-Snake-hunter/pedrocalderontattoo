@@ -10,12 +10,248 @@
     "type": "image",
     "file": "gallery/tatuaje-hannya-samurai-costilla-aguascalientes.webp",
     "caption": "Hannya samurái · costillar",
-    "alt": "Tatuaje de máscara hannya con casco samurái en el costillar, realizado por Pedro Calderón, tatuador en Aguascalientes"
+    "alt": "Tatuaje de máscara hannya con casco samurái en el costillar, realizado por Pedro Calderón, tatuador en Aguascalientes",
+    "w": 1400,
+    "h": 1866
   },
   {
     "type": "image",
     "file": "gallery/tatuaje-tribal-hombro-pecho-aguascalientes.webp",
     "caption": "Tribal blackwork · hombro y pecho",
-    "alt": "Tatuaje tribal blackwork en hombro y pecho, realizado por Pedro Calderón, tatuador en Aguascalientes"
+    "alt": "Tatuaje tribal blackwork en hombro y pecho, realizado por Pedro Calderón, tatuador en Aguascalientes",
+    "w": 1400,
+    "h": 1866
+  },
+  {
+    "type": "image",
+    "file": "gallery/tatuaje-fineline-athena-antebrazo-aguascalientes.webp",
+    "w": 384,
+    "h": 512,
+    "caption": "Athena y búho · antebrazo",
+    "alt": "Tatuaje de Athena con un búho en el antebrazo, realizado por Pedro Calderón, tatuador en Aguascalientes"
+  },
+  {
+    "type": "image",
+    "file": "gallery/tatuaje-fineline-samurai-pierna-aguascalientes.webp",
+    "w": 384,
+    "h": 512,
+    "caption": "Samurái a color · pierna",
+    "alt": "Tatuaje de samurái a color en la pierna, realizado por Pedro Calderón, tatuador en Aguascalientes"
+  },
+  {
+    "type": "image",
+    "file": "gallery/tatuaje-fineline-dragon-pierna-aguascalientes.webp",
+    "w": 384,
+    "h": 512,
+    "caption": "Dragón con flores · pierna",
+    "alt": "Tatuaje de dragón con flores rojas en la pierna, realizado por Pedro Calderón, tatuador en Aguascalientes"
+  },
+  {
+    "type": "image",
+    "file": "gallery/tatuaje-fineline-espartano-brazo-aguascalientes.webp",
+    "w": 384,
+    "h": 512,
+    "caption": "Espartano · brazo",
+    "alt": "Tatuaje de guerrero espartano en el brazo, realizado por Pedro Calderón, tatuador en Aguascalientes"
+  },
+  {
+    "type": "image",
+    "file": "gallery/tatuaje-fineline-mictlan-pierna-aguascalientes.webp",
+    "w": 384,
+    "h": 512,
+    "caption": "Mictlán · pierna",
+    "alt": "Tatuaje de motivo azteca de Mictlán en la pierna, realizado por Pedro Calderón, tatuador en Aguascalientes"
+  },
+  {
+    "type": "image",
+    "file": "gallery/tatuaje-fineline-buho-pierna-aguascalientes.webp",
+    "w": 289,
+    "h": 512,
+    "caption": "Búho a color · pierna",
+    "alt": "Tatuaje de búho a color en la pierna, realizado por Pedro Calderón, tatuador en Aguascalientes"
+  },
+  {
+    "type": "image",
+    "file": "gallery/tatuaje-fineline-nezuko-pierna-aguascalientes.webp",
+    "w": 384,
+    "h": 512,
+    "caption": "Nezuko · pierna",
+    "alt": "Tatuaje de Nezuko de Demon Slayer en la pierna, realizado por Pedro Calderón, tatuador en Aguascalientes"
+  },
+  {
+    "type": "image",
+    "file": "gallery/tatuaje-fineline-cartas-pierna-aguascalientes.webp",
+    "w": 390,
+    "h": 512,
+    "caption": "Máscaras y cartas · pierna",
+    "alt": "Tatuaje de máscaras de teatro y cartas en la pierna, realizado por Pedro Calderón, tatuador en Aguascalientes"
+  },
+  {
+    "type": "image",
+    "file": "gallery/tatuaje-fineline-sol-cabeza-aguascalientes.webp",
+    "w": 384,
+    "h": 512,
+    "caption": "Piedra del sol · cabeza",
+    "alt": "Tatuaje de piedra del sol azteca en la cabeza, realizado por Pedro Calderón, tatuador en Aguascalientes"
+  },
+  {
+    "type": "image",
+    "file": "gallery/tatuaje-fineline-xolo-brazo-aguascalientes.webp",
+    "w": 339,
+    "h": 512,
+    "caption": "Xoloitzcuintle · brazo",
+    "alt": "Tatuaje de xoloitzcuintle con plumas en el brazo, realizado por Pedro Calderón, tatuador en Aguascalientes"
+  },
+  {
+    "type": "image",
+    "file": "gallery/tatuaje-fineline-japones-brazo-aguascalientes.webp",
+    "w": 332,
+    "h": 512,
+    "caption": "Máscaras japonesas · brazo",
+    "alt": "Tatuaje de máscaras japonesas en el brazo, realizado por Pedro Calderón, tatuador en Aguascalientes"
+  },
+  {
+    "type": "image",
+    "file": "gallery/tatuaje-fineline-anubis-hombro-aguascalientes.webp",
+    "w": 265,
+    "h": 512,
+    "caption": "Anubis · hombro",
+    "alt": "Tatuaje de Anubis en el hombro, realizado por Pedro Calderón, tatuador en Aguascalientes"
+  },
+  {
+    "type": "image",
+    "file": "gallery/tatuaje-fineline-god-hombro-aguascalientes.webp",
+    "w": 384,
+    "h": 512,
+    "caption": "Cristo · hombro",
+    "alt": "Tatuaje de imagen religiosa de Cristo en el hombro, realizado por Pedro Calderón, tatuador en Aguascalientes"
+  },
+  {
+    "type": "image",
+    "file": "gallery/tatuaje-fineline-dios-hombro-aguascalientes.webp",
+    "w": 314,
+    "h": 512,
+    "caption": "Cristo · hombro",
+    "alt": "Tatuaje de imagen religiosa de Cristo en el hombro, realizado por Pedro Calderón, tatuador en Aguascalientes"
+  },
+  {
+    "type": "image",
+    "file": "gallery/tatuaje-fineline-judas-pierna-aguascalientes.webp",
+    "w": 384,
+    "h": 512,
+    "caption": "San Judas · pierna",
+    "alt": "Tatuaje de San Judas Tadeo en la pierna, realizado por Pedro Calderón, tatuador en Aguascalientes"
+  },
+  {
+    "type": "image",
+    "file": "gallery/tatuaje-fineline-virgen-pierna-aguascalientes.webp",
+    "w": 384,
+    "h": 512,
+    "caption": "Virgen · pierna",
+    "alt": "Tatuaje de la Virgen en la pierna, realizado por Pedro Calderón, tatuador en Aguascalientes"
+  },
+  {
+    "type": "image",
+    "file": "gallery/tatuaje-fineline-virgen-antebrazo-aguascalientes.webp",
+    "w": 247,
+    "h": 512,
+    "caption": "Virgen · antebrazo",
+    "alt": "Tatuaje de la Virgen en el antebrazo, realizado por Pedro Calderón, tatuador en Aguascalientes"
+  },
+  {
+    "type": "image",
+    "file": "gallery/tatuaje-fineline-cruz-antebrazo-aguascalientes.webp",
+    "w": 384,
+    "h": 512,
+    "caption": "Ángel y cruz · antebrazo",
+    "alt": "Tatuaje de ángel y cruz en el antebrazo, realizado por Pedro Calderón, tatuador en Aguascalientes"
+  },
+  {
+    "type": "image",
+    "file": "gallery/tatuaje-fineline-cazasuenos-pierna-aguascalientes.webp",
+    "w": 384,
+    "h": 512,
+    "caption": "Atrapasueños · pierna",
+    "alt": "Tatuaje de atrapasueños a color en la pierna, realizado por Pedro Calderón, tatuador en Aguascalientes"
+  },
+  {
+    "type": "image",
+    "file": "gallery/tatuaje-fineline-beetlejuice-pierna-aguascalientes.webp",
+    "w": 384,
+    "h": 512,
+    "caption": "Beetlejuice · pierna",
+    "alt": "Tatuaje de gusano de arena de Beetlejuice en la pierna, realizado por Pedro Calderón, tatuador en Aguascalientes"
+  },
+  {
+    "type": "image",
+    "file": "gallery/tatuaje-fineline-alas-pierna-aguascalientes.webp",
+    "w": 384,
+    "h": 512,
+    "caption": "Alas · pierna",
+    "alt": "Tatuaje de alas con detalles geométricos en la pierna, realizado por Pedro Calderón, tatuador en Aguascalientes"
+  },
+  {
+    "type": "image",
+    "file": "gallery/tatuaje-fineline-escorpiones-pecho-aguascalientes.webp",
+    "w": 384,
+    "h": 512,
+    "caption": "Escorpión · pecho",
+    "alt": "Tatuaje de escorpión con calavera en el pecho, realizado por Pedro Calderón, tatuador en Aguascalientes"
+  },
+  {
+    "type": "image",
+    "file": "gallery/tatuaje-fineline-joker-antebrazo-aguascalientes.webp",
+    "w": 384,
+    "h": 512,
+    "caption": "Joker · antebrazo",
+    "alt": "Tatuaje de Joker en el antebrazo, realizado por Pedro Calderón, tatuador en Aguascalientes"
+  },
+  {
+    "type": "image",
+    "file": "gallery/tatuaje-fineline-payaso-hombro-aguascalientes.webp",
+    "w": 384,
+    "h": 512,
+    "caption": "Payaso · hombro",
+    "alt": "Tatuaje de payaso en el hombro, realizado por Pedro Calderón, tatuador en Aguascalientes"
+  },
+  {
+    "type": "image",
+    "file": "gallery/tatuaje-fineline-mayer-brazo-aguascalientes.webp",
+    "w": 384,
+    "h": 512,
+    "caption": "Michael Myers · brazo",
+    "alt": "Tatuaje de Michael Myers en el brazo, realizado por Pedro Calderón, tatuador en Aguascalientes"
+  },
+  {
+    "type": "image",
+    "file": "gallery/tatuaje-fineline-mascara-brazo-aguascalientes.webp",
+    "w": 284,
+    "h": 512,
+    "caption": "Máscaras de teatro · brazo",
+    "alt": "Tatuaje de máscaras de teatro en el brazo, realizado por Pedro Calderón, tatuador en Aguascalientes"
+  },
+  {
+    "type": "image",
+    "file": "gallery/tatuaje-fineline-ojo-antebrazo-aguascalientes.webp",
+    "w": 384,
+    "h": 512,
+    "caption": "Ojo · antebrazo",
+    "alt": "Tatuaje de ojo realista en el antebrazo, realizado por Pedro Calderón, tatuador en Aguascalientes"
+  },
+  {
+    "type": "image",
+    "file": "gallery/tatuaje-fineline-ojo-mano-aguascalientes.webp",
+    "w": 384,
+    "h": 512,
+    "caption": "Ojo · mano",
+    "alt": "Tatuaje de ojo en la mano, realizado por Pedro Calderón, tatuador en Aguascalientes"
+  },
+  {
+    "type": "image",
+    "file": "gallery/tatuaje-fineline-rezo-brazo-aguascalientes.webp",
+    "w": 291,
+    "h": 512,
+    "caption": "Oración · brazo",
+    "alt": "Tatuaje de imagen de oración en el brazo, realizado por Pedro Calderón, tatuador en Aguascalientes"
   }
 ]

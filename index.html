@@ -411,7 +411,7 @@
     var ctrl = document.getElementById('car-ctrl');
     if (!stage || !ctrl) return;
     var slides = [stage.querySelector('.slide')];
-    shuffle(imgs.filter(function (i) { return i.file !== FIRST; })).slice(0, MAX_SLIDES - 1).forEach(function (it) {
+    shuffle(imgs.filter(function (i) { return i.file !== FIRST && (!i.w || !i.h || i.w / i.h >= 0.7); })).slice(0, MAX_SLIDES - 1).forEach(function (it) {
       var f = document.createElement('figure');
       f.className = 'slide';
       f.setAttribute('aria-hidden', 'true');
