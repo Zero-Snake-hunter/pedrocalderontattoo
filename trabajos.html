@@ -11,7 +11,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css?v=20261025b">
 
 <meta property="og:title" content="Trabajos — Pedro Calderón Tattoo">
 <meta property="og:description" content="Portafolio de tatuajes realizados por Pedro Calderón en HalfCab Tattoo Studio, Aguascalientes.">
@@ -120,6 +120,7 @@
         <span class="cap">Tribal blackwork · hombro y pecho</span>
       </div>
     </div>
+    <p class="gal-more-wrap" hidden><button type="button" class="btn ghost" id="gal-more">Ver más trabajos</button></p>
   </div>
 </section>
 
@@ -162,10 +163,10 @@
   // solo se sube el archivo optimizado a /gallery/ y se agrega una línea en gallery.json.
   // Agrega al final las piezas de gallery.json que aún no están en el HTML.
   const esc = s => String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  const root = document.getElementById('gallery-root');
   fetch('gallery.json')
     .then(r => r.json())
     .then(items => {
-      const root = document.getElementById('gallery-root');
       const have = new Set([...root.querySelectorAll('[data-file]')].map(el => el.getAttribute('data-file')));
       (items || []).filter(item => !have.has(item.file)).forEach(item => {
         const capHtml = item.caption ? `<span class="cap">${esc(item.caption)}</span>` : '';
@@ -180,7 +181,23 @@
         root.appendChild(div);
       });
     })
-    .catch(() => {});
+    .catch(() => {})
+    .then(() => {
+      // Muestra 12 piezas y un botón para ver más (la galería completa sigue en el HTML)
+      const STEP = 12;
+      const items = [...root.querySelectorAll('.g-item')];
+      let shown = STEP;
+      const btn = document.getElementById('gal-more');
+      function apply() {
+        items.forEach((el, i) => el.classList.toggle('more', i >= shown));
+        if (shown >= items.length) btn.parentElement.hidden = true;
+      }
+      if (items.length > STEP) {
+        btn.parentElement.hidden = false;
+        btn.addEventListener('click', () => { shown += STEP; apply(); });
+        apply();
+      }
+    });
 </script>
 
 </body>

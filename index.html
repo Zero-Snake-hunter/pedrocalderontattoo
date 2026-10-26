@@ -12,7 +12,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="image" href="gallery/tatuaje-hannya-samurai-costilla-aguascalientes.webp" fetchpriority="high">
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css?v=20261025b">
 
 <meta property="og:locale" content="es_MX">
 <meta property="og:site_name" content="Pedro Calderón Tattoo">
@@ -434,7 +434,6 @@
 
     var idx = 0, timer = null, userPaused = false, hovering = false;
     var reduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    if (reduced) userPaused = true;
     var dotsBox = document.getElementById('car-dots');
     var toggle = document.getElementById('car-toggle');
 
@@ -464,10 +463,6 @@
     document.getElementById('car-prev').addEventListener('click', function () { show(idx - 1); });
     document.getElementById('car-next').addEventListener('click', function () { show(idx + 1); });
     toggle.addEventListener('click', function () { userPaused = !userPaused; syncToggle(); });
-    stage.addEventListener('mouseenter', function () { hovering = true; });
-    stage.addEventListener('mouseleave', function () { hovering = false; });
-    stage.addEventListener('focusin', function () { hovering = true; });
-    stage.addEventListener('focusout', function () { hovering = false; });
 
     ctrl.hidden = false;
     show(Math.floor(Math.random() * slides.length));   // cada visita arranca con una foto distinta

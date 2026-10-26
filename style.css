@@ -391,3 +391,19 @@ footer{border-top:1px solid var(--line);padding:44px 0 90px;}
 
 /* El carrusel espera un instante a elegir su foto de inicio al azar (solo con JavaScript) */
 .carousel.pending .slide{opacity:0 !important;transition:none;}
+
+/* ===== Ajustes: tira compacta y galería en cuadrícula con "Ver más" ===== */
+.tiles{grid-template-columns:repeat(4,1fr);gap:12px;}
+.tile{aspect-ratio:4/5;}
+@media (max-width:700px){
+  .tiles{grid-template-columns:repeat(2,1fr);gap:8px;}
+  .tile:nth-child(n+7){display:none;}
+}
+.gallery{display:grid;column-count:auto;grid-template-columns:repeat(4,1fr);gap:12px;}
+.g-item{margin:0;aspect-ratio:3/4;}
+.g-item img,.g-item video{height:100%;object-fit:cover;}
+.g-item.more{display:none;}
+.gal-more-wrap{text-align:center;margin:32px 0 0;}
+.gal-more-wrap[hidden]{display:none;}
+@media (max-width:900px){.gallery{grid-template-columns:repeat(3,1fr);}}
+@media (max-width:600px){.gallery{grid-template-columns:repeat(2,1fr);gap:8px;}}
