@@ -1,0 +1,1 @@
+Carpeta temporal: sube aquí las fotos originales. Se convertirán a WebP y esta carpeta se elimina antes de publicar.
