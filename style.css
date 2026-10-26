@@ -433,3 +433,17 @@ footer{border-top:1px solid var(--line);padding:44px 0 90px;}
 .review footer b{color:var(--ink);font-weight:600;font-size:0.92rem;}
 .review footer span{color:var(--ink-dim);font-size:0.8rem;}
 @media (max-width:860px){.reviews{grid-template-columns:1fr;}}
+
+/* Botón fijo de WhatsApp: verde de la app, con su logo */
+.fab{background:#25D366;color:#06260f;font-weight:700;font-size:0.95rem;padding:10px 20px 10px 10px;gap:10px;box-shadow:0 10px 26px rgba(0,0,0,0.45);}
+.fab:hover{background:#3ae07a;color:#06260f;transform:translateY(-1px);}
+.fab-ico{width:34px;height:34px;border-radius:50%;background:#fff;color:#25D366;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.fab-ico svg{width:20px;height:20px;}
+.fab:focus-visible{outline:3px solid #fff;outline-offset:3px;}
+@media (prefers-reduced-motion:no-preference){.fab{transition:background .2s ease,transform .2s ease;}}
+
+/* Botón grande hacia Trabajos */
+.btn-xl{padding:22px 54px;font-size:1.2rem;}
+.work-cta{padding:72px 0;}
+.work-cta .wrap{display:flex;justify-content:center;}
+@media (max-width:520px){.btn-xl{padding:20px 32px;font-size:1.1rem;}}
