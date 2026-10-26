@@ -407,3 +407,12 @@ footer{border-top:1px solid var(--line);padding:44px 0 90px;}
 .gal-more-wrap[hidden]{display:none;}
 @media (max-width:900px){.gallery{grid-template-columns:repeat(3,1fr);}}
 @media (max-width:600px){.gallery{grid-template-columns:repeat(2,1fr);gap:8px;}}
+
+/* Estilos: tarjetas con foto */
+.style-card{padding:0;display:flex;flex-direction:column;}
+.style-card img{width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;object-position:center 30%;}
+.style-body{padding:26px 28px 30px;}
+.style-body h3{margin:0 0 10px;}
+.style-link{display:inline-block;margin-top:16px;color:var(--brass);text-decoration:none;font-size:0.9rem;font-weight:600;}
+.style-link:hover{color:var(--ink);}
+@media (max-width:860px){.style-card img{aspect-ratio:4/3;object-position:center 25%;}}
