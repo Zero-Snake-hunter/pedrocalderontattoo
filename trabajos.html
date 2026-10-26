@@ -11,7 +11,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=20261025d">
+<link rel="stylesheet" href="style.css?v=20261025e">
 
 <meta property="og:title" content="Trabajos — Pedro Calderón Tattoo">
 <meta property="og:description" content="Portafolio de tatuajes realizados por Pedro Calderón en HalfCab Tattoo Studio, Aguascalientes.">
@@ -184,7 +184,7 @@
     .catch(() => {})
     .then(() => {
       // Muestra 12 piezas y un botón para ver más (la galería completa sigue en el HTML)
-      const STEP = 12;
+      const STEP = 60;   // se muestran todas las piezas; sube este número solo si algún día hay más
       const items = [...root.querySelectorAll('.g-item')];
       let shown = STEP;
       const btn = document.getElementById('gal-more');

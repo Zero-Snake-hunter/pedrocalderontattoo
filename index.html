@@ -12,7 +12,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="image" href="gallery/tatuaje-hannya-samurai-costilla-aguascalientes.webp" fetchpriority="high">
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=20261025d">
+<link rel="stylesheet" href="style.css?v=20261025e">
 
 <meta property="og:locale" content="es_MX">
 <meta property="og:site_name" content="Pedro Calderón Tattoo">
@@ -225,23 +225,9 @@
   </div>
 </section>
 
-<section class="section" id="trabajo-reciente" style="background:var(--bg-alt);border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+<section class="section work-cta" id="trabajo-reciente" style="border-top:1px solid var(--line);">
   <div class="wrap">
-    <div class="section-head">
-      <div>
-        <h2>Trabajo reciente</h2>
-        <p>Una selección de piezas realizadas en sesión.</p>
-      </div>
-      <a class="btn ghost" href="trabajos.html">Ver todos los trabajos →</a>
-    </div>
-    <div class="tiles" id="strip">
-      <a class="tile" href="trabajos.html" data-file="gallery/tatuaje-hannya-samurai-costilla-aguascalientes.webp">
-        <img src="gallery/tatuaje-hannya-samurai-costilla-aguascalientes.webp" alt="Tatuaje de máscara hannya con casco samurái en el costillar, realizado por Pedro Calderón, tatuador en Aguascalientes" width="1400" height="1866" loading="lazy" decoding="async">
-      </a>
-      <a class="tile" href="trabajos.html" data-file="gallery/tatuaje-tribal-hombro-pecho-aguascalientes.webp">
-        <img src="gallery/tatuaje-tribal-hombro-pecho-aguascalientes.webp" alt="Tatuaje tribal blackwork en hombro y pecho, realizado por Pedro Calderón, tatuador en Aguascalientes" width="1400" height="1866" loading="lazy" decoding="async">
-      </a>
-    </div>
+    <a class="btn" href="trabajos.html">Muestra de trabajos →</a>
   </div>
 </section>
 
@@ -271,21 +257,21 @@
       </div>
       <a class="btn ghost" href="https://www.google.com/maps?q=HALFCAB+TATTOO+STUDIO,21.8721354,-102.2977897" target="_blank" rel="noopener">Ver opiniones en Google →</a>
     </div>
+    <p class="rating"><span class="star" aria-hidden="true">★</span> <b>4.9</b> de 5 en Google · HalfCab Tattoo Studio</p>
     <div class="reviews">
       <blockquote class="review review-main">
-        <p>“Pedro es todo un artista.”</p>
-        <footer>— Alfredo Varela López, Local Guide en Google</footer>
+        <p>“Me hicieron un tatuaje y quedo excelente, Pedro es todo un artista. Todos ahí unos profesionales y el lugar muy cómodo e higiénico. Te hacen sentir en confianza. Lo recomiendo al 100%”</p>
+        <footer><b>Alfredo Varela López</b><span>Local Guide · Opinión en Google</span></footer>
       </blockquote>
-      <div class="review review-sum">
-        <h3>Limpieza e higiene</h3>
-        <p>Es lo que más se repite en las opiniones del estudio: un lugar limpio, ordenado y cómodo.</p>
-      </div>
-      <div class="review review-sum">
-        <h3>Trato y confianza</h3>
-        <p>Los clientes mencionan un trato amable y atento, y que se sintieron en confianza durante la sesión.</p>
-      </div>
+      <blockquote class="review">
+        <p>“Excelente servicio y atención, son muy amables y atentos, además de que tatúan muy rápido, 1000% recomendados.”</p>
+        <footer><b>Laura Mora</b><span>Opinión en Google</span></footer>
+      </blockquote>
+      <blockquote class="review">
+        <p>“Excelente servicio, tienen muy limpio el estudio y muy buen habiente, recomendado.”</p>
+        <footer><b>Martin Vega</b><span>Opinión en Google</span></footer>
+      </blockquote>
     </div>
-    <p class="review-note">El estudio tiene una calificación de 4.9 sobre 5 en Google. El resumen es de las opiniones públicas del estudio, no de un cliente en particular.</p>
   </div>
 </section>
 
@@ -479,23 +465,6 @@
     timer = setInterval(tick, INTERVAL);
   }
 
-  /* ---------- Tira de trabajo reciente ---------- */
-  function initStrip(imgs) {
-    var strip = document.getElementById('strip');
-    if (!strip) return;
-    var have = {};
-    [].forEach.call(strip.querySelectorAll('[data-file]'), function (el) { have[el.getAttribute('data-file')] = true; });
-    var room = 8 - Object.keys(have).length;
-    imgs.filter(function (i) { return !have[i.file]; }).slice(0, Math.max(room, 0)).forEach(function (it) {
-      var a = document.createElement('a');
-      a.className = 'tile';
-      a.href = 'trabajos.html';
-      a.setAttribute('data-file', it.file);
-      a.innerHTML = '<img src="' + esc(it.file) + '" alt="' + esc(it.alt) + '" loading="lazy" decoding="async">';
-      strip.appendChild(a);
-    });
-  }
-
   var stageEl = document.getElementById('hero-stage');
   function reveal() { stageEl.classList.remove('pending'); }
   var revealTimer = setTimeout(reveal, 900);      // si gallery.json tarda, se muestra la foto fija
@@ -504,7 +473,6 @@
     .then(function (items) {
       var imgs = (items || []).filter(function (i) { return i.type === 'image'; });
       initCarousel(imgs);
-      initStrip(imgs);
     })
     .catch(function () {})
     .then(function () { clearTimeout(revealTimer); reveal(); });
