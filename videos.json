@@ -1,5 +1,20 @@
 [
-  { "url": "https://www.tiktok.com/@pedrocalderontattoo/video/7688877427447041298", "thumb": "", "title": "Ver video en TikTok", "alt": "" },
-  { "url": "https://www.tiktok.com/@pedrocalderontattoo/video/7424271228979924229", "thumb": "", "title": "Ver video en TikTok", "alt": "" },
-  { "url": "https://www.tiktok.com/@pedrocalderontattoo/video/7389415864728128774", "thumb": "", "title": "Ver video en TikTok", "alt": "" }
+  {
+    "url": "https://www.tiktok.com/@pedrocalderontattoo/video/7688877427447041298",
+    "thumb": "gallery/tiktok-portada-sesion-tatuaje-aguascalientes-1.webp",
+    "title": "Acompáñame a una sesión",
+    "alt": "Portada del video de TikTok: Pedro Calderón tatuando en sesión, en Aguascalientes"
+  },
+  {
+    "url": "https://www.tiktok.com/@pedrocalderontattoo/video/7424271228979924229",
+    "thumb": "gallery/tiktok-portada-dia-en-el-estudio-aguascalientes-2.webp",
+    "title": "Un día en el estudio",
+    "alt": "Portada del video de TikTok: sesión de tatuaje dentro del estudio, en Aguascalientes"
+  },
+  {
+    "url": "https://www.tiktok.com/@pedrocalderontattoo/video/7389415864728128774",
+    "thumb": "gallery/tiktok-portada-aguila-cabeza-aguascalientes-3.webp",
+    "title": "Águila en la cabeza",
+    "alt": "Portada del video de TikTok: tatuaje de águila en la cabeza, en proceso"
+  }
 ]

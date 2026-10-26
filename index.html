@@ -388,6 +388,7 @@
   WhatsApp
 </a>
 
+<script>document.getElementById('hero-stage').classList.add('pending');</script>
 <script>
 (function () {
   var FIRST = 'gallery/tatuaje-hannya-samurai-costilla-aguascalientes.webp';
@@ -460,7 +461,7 @@
     stage.addEventListener('focusout', function () { hovering = false; });
 
     ctrl.hidden = false;
-    show(0);
+    show(Math.floor(Math.random() * slides.length));   // cada visita arranca con una foto distinta
     syncToggle();
     timer = setInterval(tick, INTERVAL);
   }
@@ -482,6 +483,9 @@
     });
   }
 
+  var stageEl = document.getElementById('hero-stage');
+  function reveal() { stageEl.classList.remove('pending'); }
+  var revealTimer = setTimeout(reveal, 900);      // si gallery.json tarda, se muestra la foto fija
   fetch('gallery.json')
     .then(function (r) { return r.json(); })
     .then(function (items) {
@@ -489,7 +493,8 @@
       initCarousel(imgs);
       initStrip(imgs);
     })
-    .catch(function () {});
+    .catch(function () {})
+    .then(function () { clearTimeout(revealTimer); reveal(); });
 
   /* ---------- Mira el proceso (videos.json) ---------- */
   fetch('videos.json')

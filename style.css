@@ -388,3 +388,6 @@ footer{border-top:1px solid var(--line);padding:44px 0 90px;}
   .vid-ph{font-size:0.58rem;letter-spacing:0.04em;}
   .vid b{font-size:0.68rem;padding:26px 8px 8px;}
 }
+
+/* El carrusel espera un instante a elegir su foto de inicio al azar (solo con JavaScript) */
+.carousel.pending .slide{opacity:0 !important;transition:none;}
